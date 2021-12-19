@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+
+    /* background-color: yellow; */
+}
+
+div#container{
+    width: 100%;
+    height: auto;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: inherit;
+    height: 80px;
+    background-color: rgb(206, 129, 47) ;
+    background-image: url("leather.png");
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-shadow:2px 2px rgba(189, 106, 18, 0.5);
+
+}
+
+.menu{
+    width: inherit;
+    height: 300px;
+    overflow: hidden;
+    /* background-color: rgb(58, 19, 19); */
+    text-align: center;
+    margin: 40px 0;
+    transition: all 0.7s;
+}
+
+.menu img{
+    height: 200px;
+    width: auto;
+    margin: 20px 20px;
+    text-align: center;
+}
+
+.menu:hover{
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    /* background-color: gold;  */
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    section{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 20px;
+        flex-wrap: wrap;
+    }
+    .menu{
+        width: 30%;
+    }
+}
